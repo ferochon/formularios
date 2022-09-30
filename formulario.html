@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+<h3>Tipo texto</h3>
+<form action="https://formspree.io/f/{form_id}" method="post">
+    <fieldset>
+        <legend>Regístrate</legend>
+        
+
+        
+            Nombre: <input type="text" name="Nombre" maxlength="50" placeholder="nombre(s)"> <br> <br>
+            Correo: <input type="email" name="correo" placeholder="nom_usuario@dominio" required> <br> <br>
+            telefono: <input type="tel" name="telefono" placeholder="(55)5555555555" min="" max=""> <br> <br> 
+            Tu contraseña: <input type="password" name="name contraseña" minlength="8" maxlength="12" required placeholder="mínimo 8 máximo 12 caracteres"><br> <br>
+        
+            
+            Sexo: 
+            <input type="radio" name="sexo" id="Hombre" value="Hombre">  
+            <label for="Hombre">Hombre</label>
+            <input type="radio" name="sexo" value="Hombre">Mujer  
+            <input type="radio" name="sexo" value="Otro">Otro <br> <br>
+        
+            Escolaridad: <select name="Escolaridad">
+                <option value="kinder">Kinder</option>
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="bachillerato">Bachillerato</option>
+                <option value="licenciatura">Lifcenciatura</option>
+                <option value="postgrado">Postgrado</option>
+            </select> <br><br>
+        
+
+            Fecha de registro: <input type="date" name="fecha" value="2020-01-01" min="2022-01-01" >
+            </input> <br> <br>
+        
+            comentarios<br> <br>
+            <textarea name="area_de_comentarios"  cols="50" rows="5"></textarea>   <br> <br>
+        
+        
+            <input type="submit" value="Enviar">  <br> <br> 
+            <input type="reset" value="Borrar"> <br> <br>
+    </fieldset> 
+</form> 
+
+</body>
+</html>
